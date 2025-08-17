@@ -1,5 +1,9 @@
-
+import { getAllTask } from "../services/services";
 
 export function renderTaskManager(){
-    console.log("Task manager");
+// endPoint
+const endpoint = "/api/";
+
+getAllTask(endpoint);
+
 }

@@ -1,0 +1,30 @@
+{
+
+    "tasks":[
+        {
+            "id": 1,
+            "title": "Tarea 1",
+            "assigned": "Fulano",
+            "duedate": "12/01/2025",
+            "description": "Una tarea mas",
+            "status": "Pending"
+        },
+               {
+            "id": 2,
+            "title": "Tarea 2",
+            "assigned": "Fulana",
+            "duedate": "11/01/2025",
+            "description": "Una tarea menos",
+            "status": "Done"
+        },
+           {
+            "id": 3,
+            "title": "Tarea 3",
+            "assigned": "Fulanasa",
+            "duedate": "11/03/2025",
+            "description": " tarea menos",
+            "status": "Pending"
+        }
+    ]
+
+}

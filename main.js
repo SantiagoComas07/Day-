@@ -1,10 +1,14 @@
 import './src/css/style.css';
 
 import {redirecTo, renderRouter} from './src/routes/router.js'
+import { getAllTask } from './src/services/services.js';
 
 
 
 window.addEventListener("DOMContentLoaded", renderRouter);
+
+
+
 
 
 // Logic for the change of view

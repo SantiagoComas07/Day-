@@ -1,1 +1,27 @@
-<h1>Hola task</h1>
+<main class="my-20">
+    <form action="" class="w-md h-lg flex border-1 rounded-xs mx-3 p-5 flex-col gap-3 bg-white">
+        <label for="title-task">Title of the task</label>
+        <input class="border-1 py-1 px-0.5 border-blue-200 hover:border-blue-900" type="text" name="title-task"
+            id="title-task" placeholder="Title">
+        <label for="assigned">Assigned To</label>
+        <input class="border-1 py-1 px-0.5 border-blue-200 hover:border-blue-900" type="text" name="assigned"
+            id="assigned" placeholder="Asignado">
+        <label for="due-data">Due Date</label>
+        <input class="border-1 py-1 px-0.5 border-blue-200 hover:border-blue-900" type="date" name="due-data"
+            id="due-data">
+        <label for="description">Description</label>
+        <textarea class="border-1 py-1 px-0.5 border-blue-200 hover:border-blue-900" name="description"
+            id="description"></textarea>
+        <label for="status">Status</label>
+        <select class="border-1 py-1 px-0.5 border-blue-200 hover:border-blue-900" name="status" id="status">
+            <option value="Pending">Pending</option>
+            <option value="Completed">Completed</option>
+        </select>
+        <input
+            class=" w-full mx-auto px-3 py-1.5 rounded-xs font-semibold text-white bg-blue-600 cursor-pointer hover:bg-blue-200 hover:text-blue-400"
+            type="submit" value="send">
+    </form>
+    <div class="w-fit flex border-1 rounded-xs mx-3 p-5  gap-3 bg-white " id="contain">
+        Contenido de las tareas
+    </div>
+</main>
