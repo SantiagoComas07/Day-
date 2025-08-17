@@ -1,9 +1,20 @@
-import { getAllTask } from "../services/services";
+import { getAllTask, postTask, deleteTask } from "../services/services";
 
-export function renderTaskManager(){
-// endPoint
-const endpoint = "/api/";
+export function renderTaskManager() {
+    // endPoint
+    const endpoint = "/api/";
 
-getAllTask(endpoint);
+    // HTML element
+    const send = document.getElementById("send-post");
 
-}
+    getAllTask(endpoint);
+
+    send.addEventListener("click", async(event) => {
+        event.preventDefault();
+        console.log("Funciona")
+        await postTask(endpoint);
+    });
+
+
+
+};
