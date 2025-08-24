@@ -1,3 +1,4 @@
+import { taskUpload, taskDelete } from "../js/alerts";
 
 
 
@@ -38,22 +39,25 @@ export async function getAllTask(endPointJson) {
                 console.log("Funciona el click")
                 sendUpdate.style.display = "none";
                 const id = event.target.getAttribute("data-id-delete")
-                await deleteTask(endPointJson, id);
+                // Alert
+                taskDelete(endPointJson, id);
             });
         });
 
         //Edit process
         const editId = document.querySelectorAll(".edit-task");
         const sendUpdate = document.getElementById("send-update");
+        const sendPost = document.getElementById("send-post");
 
         let idFound;
-
+        sendPost.style.display = "block";
         sendUpdate.style.display = "none";
         console.log(editId);
         editId.forEach(element => {
             element.addEventListener("click", async (event) => {
                 event.preventDefault();
                 sendUpdate.style.display = "block ";
+                sendPost.style.display = "none";
                 const id = event.target.getAttribute("data-id-edit");
                 idFound = id
                 const titleTask = document.getElementById("title-task");
@@ -110,6 +114,8 @@ export async function postTask(endPointJson) {
         });
         if (response.ok) {
             console.log("The task has been added sussccesfully");
+            // Alert
+            taskUpload("The task has been added sussccesfully");
         } else {
             throw new Error("There was an error in the moment of upload the task ")
         }
@@ -173,7 +179,10 @@ export async function putTask(endPointJson, idElement) {
             body: JSON.stringify(updateTask)
         });
         if (response.ok) {
-            console.log("The task has updated successfully")
+            console.log("The task has updated successfully");
+            // Alerts
+            taskUpload("The task has been updated sussccesfully");
+
         }
         await getAllTask(endPointJson);
         clearInputs()
@@ -192,10 +201,11 @@ export async function deleteTask(endPointJson, idElement) {
         });
         if (response.ok) {
             console.log("The task has been deleted sussccesfully");
-            getAllTask(endPointJson)
+       
         } else {
             console.warn("There was an error in the moment of delete the task ");
         }
+        getAllTask(endPointJson);
     } catch (error) {
         console.error("There is an erro in the response deleteTask", error);
     }

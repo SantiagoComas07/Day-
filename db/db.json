@@ -9,20 +9,36 @@
       "status": "Pending"
     },
     {
-      "id": "7426",
-      "title": "Ir al cole",
-      "assigned": "Melissa",
-      "duedate": "2025-08-05",
-      "description": "Estudiar mucho",
+      "id": "a6d2",
+      "title": "Titulo 8",
+      "assigned": "Andres",
+      "duedate": "2025-08-13",
+      "description": "Recursos",
+      "status": "Completed"
+    },
+    {
+      "id": "ee60",
+      "title": "Tarea 4",
+      "assigned": "Sandra",
+      "duedate": "2025-08-14",
+      "description": "Sandra",
+      "status": "Completed"
+    },
+    {
+      "id": "666a",
+      "title": "carne carnecol",
+      "assigned": "Ana tamara",
+      "duedate": "2025-08-19",
+      "description": "Carne",
       "status": "Pending"
     },
     {
-      "id": "0a73",
-      "title": "Dormir",
-      "assigned": "Sara",
-      "duedate": "2025-08-07",
-      "description": "Descansar ",
-      "status": "Completed"
+      "id": "0512",
+      "title": "Ingenieria civil",
+      "assigned": "Carlos Comas",
+      "duedate": "2025-08-18",
+      "description": "Diseño de estructura",
+      "status": "Pending"
     }
   ]
 }
