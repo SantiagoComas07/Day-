@@ -1,4 +1,4 @@
-import { getAllTask, postTask, deleteTask } from "../services/services";
+import { getAllTask, postTask } from "../services/services";
 
 export function renderTaskManager() {
     // endPoint

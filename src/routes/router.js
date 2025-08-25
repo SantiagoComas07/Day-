@@ -1,6 +1,7 @@
 import {renderHome} from '../js/home.js';
 import {renderNotFound} from '../js/notFound.js';
 import {renderTaskManager} from '../js/task.js';
+import {renderData} from '../js/data.js'
 
 const routes = {
     "/": {
@@ -11,10 +12,15 @@ const routes = {
         path: "src/views/task-manager.html",
         setup: renderTaskManager
     },
+    "/data":{
+        path: "src/views/data.html",
+        setup: renderData
+    },
     "/notFound":{
         path: "src/views/notFound.html",
         setup: renderNotFound
     }
+ 
 };
 
 

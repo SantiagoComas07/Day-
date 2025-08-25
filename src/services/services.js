@@ -1,7 +1,5 @@
 import { taskUpload, taskDelete } from "../js/alerts";
 
-
-
 //Get request
 export async function getAllTask(endPointJson) {
     const contain = document.getElementById("contain");
@@ -11,7 +9,6 @@ export async function getAllTask(endPointJson) {
         if (!response.ok) {
             throw new Error("There was an error in the response  request")
         }
-        //Here contain is initialized 
         contain.innerHTML = "";
         data.forEach(element => {
             contain.innerHTML += `
@@ -28,7 +25,6 @@ export async function getAllTask(endPointJson) {
     </article>
             `;
         });
-
         // Delete process
 
         const deleteId = document.querySelectorAll(".delete-task");
@@ -74,16 +70,26 @@ export async function getAllTask(endPointJson) {
                 statusTask.value = datas.status;
             });
         });
+
+
+
+
         sendUpdate.addEventListener("click", async (event) => {
             event.preventDefault();
             await putTask(endPointJson, idFound);
-            idFound=null
-       });
+            idFound = null
+        });
+
+
+
+
 
     } catch (error) {
         console.error("Error in request getAllTask", error);
     }
 }
+
+
 
 // Post item
 
@@ -142,17 +148,17 @@ async function getById(endPointJsonGet, idElementGet) {
 // clearInputs
 
 function clearInputs() {
-    document.getElementById("title-task").value= "";
-    document.getElementById("assigned").value= "";
-    document.getElementById("due-data").value= "";
-    document.getElementById("description").value= "";
-    document.getElementById("status").value= "pending";
+    document.getElementById("title-task").value = "";
+    document.getElementById("assigned").value = "";
+    document.getElementById("due-data").value = "";
+    document.getElementById("description").value = "";
+    document.getElementById("status").value = "pending";
 }
 
 
 
 //Put task
-export async function putTask(endPointJson, idElement) {
+async function putTask(endPointJson, idElement) {
     // HTML elements
     const titleTask = document.getElementById("title-task");
     const assignedTask = document.getElementById("assigned");
@@ -201,7 +207,7 @@ export async function deleteTask(endPointJson, idElement) {
         });
         if (response.ok) {
             console.log("The task has been deleted sussccesfully");
-       
+
         } else {
             console.warn("There was an error in the moment of delete the task ");
         }
@@ -210,4 +216,5 @@ export async function deleteTask(endPointJson, idElement) {
         console.error("There is an erro in the response deleteTask", error);
     }
 }
+
 
