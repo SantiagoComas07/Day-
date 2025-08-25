@@ -6,7 +6,7 @@
       "assigned": "Sandra",
       "duedate": "2025-08-04",
       "description": "Papa, zanahoria, queso.",
-      "status": "Pending"
+      "status": "Completed"
     },
     {
       "id": "ee60",
@@ -27,7 +27,7 @@
     {
       "id": "0512",
       "title": "Ingenieria civil",
-      "assigned": "Carlos Comas",
+      "assigned": "FULANO",
       "duedate": "2025-08-18",
       "description": "Diseño de estructura",
       "status": "Pending"

@@ -70,7 +70,7 @@ const  assignedTask =  new Chart(userAssignedctx, {
         datasets:[{
             label: "Numero de tareas",
             data: data,
-            backgroundColor:["#F5E70F","#D6300D", "#002470"]
+            backgroundColor:["#F5E70F","#D6300D", "#001C78"]
         }]
     },
     options:{
