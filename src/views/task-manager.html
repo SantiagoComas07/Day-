@@ -1,0 +1,30 @@
+<main class="my-20 flex">
+    <form action="" class="w-xl h-lg m-4 flex rounded-xs mx-3 p-5 flex-col gap-3 bg-white shadow-lg shadow-blue-200">
+        <label for="title-task" class="text-blue-950">Title of the task</label>
+        <input class="border-1 py-1 px-0.5 border-blue-200 hover:border-blue-900" type="text" name="title-task"
+            id="title-task" placeholder="Title">
+        <label for="assigned" class="text-blue-950">Assigned To</label>
+        <input class="border-1 py-1 px-0.5 border-blue-200 hover:border-blue-900" type="text" name="assigned"
+            id="assigned" placeholder="Asignado">
+        <label for="due-data" class="text-blue-950">Due Date</label>
+        <input class="border-1 py-1 px-0.5 border-blue-200 hover:border-blue-900" type="date" name="due-data"
+            id="due-data">
+        <label for="description" class="text-blue-950">Description</label>
+        <textarea class="border-1 py-1 px-0.5 border-blue-200 hover:border-blue-900" name="description"
+            id="description"></textarea>
+        <label for="status" class="text-blue-950">Status</label>
+        <select class="border-1 py-1 px-0.5 border-blue-200 hover:border-blue-900" name="status" id="status">
+            <option value="Pending" class="text-blue-500">Pending</option>
+            <option value="Completed" class="text-blue-500">Completed</option>
+        </select>
+        <input
+            class=" w-full mx-auto px-3 py-1.5 rounded-xs font-semibold text-white bg-blue-600 cursor-pointer hover:bg-blue-200 hover:text-blue-400"
+            type="click" value="send" id="send-post">
+        <input
+            class=" w-full mx-auto px-3 py-1.5 rounded-xs font-semibold text-white bg-amber-500 cursor-pointer hover:bg-amber-200 hover:text-amber-400"
+            type="click" value="update" id="send-update">
+    </form>
+    <div class="w-fit h-[32rem] flex flex-wrap  mx-4 p-5 gap-3 bg-white overflow-y-scroll  " id="contain">
+        Contenido de las tareas
+    </div>
+</main>

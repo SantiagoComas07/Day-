@@ -1,0 +1,36 @@
+{
+  "tasks": [
+    {
+      "id": "0620",
+      "title": "Comprar comida",
+      "assigned": "Sandra",
+      "duedate": "2025-08-04",
+      "description": "Papa, zanahoria, queso.",
+      "status": "Completed"
+    },
+    {
+      "id": "ee60",
+      "title": "Tarea 4",
+      "assigned": "Sandra",
+      "duedate": "2025-08-14",
+      "description": "Sandra",
+      "status": "Completed"
+    },
+    {
+      "id": "666a",
+      "title": "carne carnecol",
+      "assigned": "Ana tamara",
+      "duedate": "2025-08-19",
+      "description": "Carne",
+      "status": "Pending"
+    },
+    {
+      "id": "0512",
+      "title": "Ingenieria civil",
+      "assigned": "FULANO",
+      "duedate": "2025-08-18",
+      "description": "Diseño de estructura",
+      "status": "Pending"
+    }
+  ]
+}
