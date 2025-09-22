@@ -133,6 +133,17 @@ export async function postTask(endPointJson) {
 };
 
 
+export async function getPersons() {
+     try {
+        const response = await fetch(`http://localhost:3000/persons`);
+        const data = await response.json();
+        return data;
+
+    } catch (error) {
+        console.error("There was an error in response getById", error);
+    }
+}
+
 //getByid
 async function getById(endPointJsonGet, idElementGet) {
     try {
