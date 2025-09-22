@@ -4,8 +4,12 @@
         <input class="border-1 py-1 px-0.5 border-blue-200 hover:border-blue-900" type="text" name="title-task"
             id="title-task" placeholder="Title">
         <label for="assigned" class="text-blue-950">Assigned To</label>
-        <input class="border-1 py-1 px-0.5 border-blue-200 hover:border-blue-900" type="text" name="assigned"
-            id="assigned" placeholder="Asignado">
+        <select name="assigned" required class="border-1 py-1 px-0.5 border-blue-200 hover:border-blue-900"
+            id="assigned">
+        <option value="" selected class="text-blue-500">Select a person</option>
+        </select>
+        <!-- <input class="border-1 py-1 px-0.5 border-blue-200 hover:border-blue-900" type="text" name="assigned"
+            id="assigned" placeholder="Asignado"> -->
         <label for="due-data" class="text-blue-950">Due Date</label>
         <input class="border-1 py-1 px-0.5 border-blue-200 hover:border-blue-900" type="date" name="due-data"
             id="due-data">
